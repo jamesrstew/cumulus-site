@@ -2,10 +2,14 @@ body {
     font-family: Poppins, sans-serif;
     background-color: #000;
     color: #000;
-    padding-top: 75px; /* Keep this as is */
+    padding-top: 75px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
+  font-family: 'Concert One', cursive;
+}
+
+h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -26,6 +30,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar-nav {
     padding-left: 15px;
+}
+
+.navbar-btn {
+    margin-left: 15px;
+}
+
+.modal .qr-code {
+    max-width: 200px;
+    height: auto;
+    margin: 20px auto;
 }
 
 .main-content {
@@ -51,9 +65,21 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
 }
 
+.qr-code-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 .qr-code {
-    max-width: 150px;
+    max-width: 300px;
     height: auto;
+    margin-bottom: 10px;
+}
+
+.qr-code-text {
+    font-size: 0.9em; /* Adjust as needed */
 }
 
 .download-section {
@@ -102,7 +128,7 @@ h1, h2, h3, h4, h5, h6 {
         padding: 0.5rem 1rem !important;
     }
 
-    p {
+    p, ul {
         font-size: 0.9em; /* Make <p> text slightly smaller on mobile */
     }
 
@@ -112,6 +138,11 @@ h1, h2, h3, h4, h5, h6 {
         margin-top: 20px;
         margin-bottom: 20px; /* Add space below the App Store button */
     }
+
+    .app-store-button img {
+    width: 200px;
+    height: auto;
+}
 
     .content-box {
     flex-direction: column;
@@ -381,4 +412,84 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Concert One", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+#downloadButton {
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    border: none;
+}
+
+#downloadButton::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 999px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+#downloadButton:hover::after {
+    opacity: 1;
+}
+
+@keyframes continuousHeadShake {
+    0%, 100% { transform: translateX(0); }
+    6.5% { transform: translateX(-3px) rotateY(-9deg); }
+    18.5% { transform: translateX(2px) rotateY(7deg); }
+    31.5% { transform: translateX(-1px) rotateY(-5deg); }
+    43.5% { transform: translateX(1px) rotateY(3deg); }
+    50% { transform: translateX(0); }
+}
+
+#downloadButton {
+    animation: continuousHeadShake 3s infinite;
+}
+
+#downloadButton:hover {
+    animation: continuousHeadShake 1s infinite;
+}
+
+.animated-download-element {
+    position: relative;
+    display: inline-block;
+    animation: gentleFloat 4s ease-in-out infinite;
+}
+
+@keyframes gentleFloat {
+    0%, 100% { transform: translateY(0); }
+    25% { transform: translateY(-5px); }
+    75% { transform: translateY(5px); }
+}
+
+/* For the QR code on desktop */
+@media (min-width: 992px) {
+    .qr-code-container {
+        animation: gentleFloat 4s ease-in-out infinite;
+    }
+}
+
+/* For the App Store button on mobile */
+@media (max-width: 991px) {
+    .app-store-button {
+        animation: gentleFloat 4s ease-in-out infinite;
+    }
+
+    .app-store-button:hover {
+        animation: gentleFloat 2s ease-in-out infinite;
+    }
 }
