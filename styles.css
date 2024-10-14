@@ -2,7 +2,7 @@ body {
     font-family: Poppins, sans-serif;
     background-color: #000;
     color: #000;
-    padding-top: 75px; /* Adjust this value to match your navbar height */
+    padding-top: 75px; /* Keep this as is */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -10,30 +10,51 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar {
-    background-color: rgba(0, 0, 0, 0) !important; /* Semi-transparent black */
+    background-color: transparent !important;
 }
 
 .navbar-brand {
-  font-family: 'Concert One', cursive;
-  font-size: 1.5rem;
-  display: flex;
-  align-items: center;
+    font-family: 'Concert One', cursive;
+    font-size: 1.5rem;
 }
 
 .navbar-logo {
-    width: 30px; /* Adjust this value to scale the logo as needed */
+    width: 30px;
     height: auto;
-    margin-right: 10px; /* Add some space between the logo and text */
+    margin-right: 10px;
 }
 
-.nav-link {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
+@media (min-width: 992px) {
+    .navbar-nav .nav-item {
+        background-color: rgba(0, 0, 0, 0.7);
+        margin-left: 5px;
+        border-radius: 5px;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 0.5rem 1rem !important;
+    }
 }
 
-.navbar-collapse {
-    max-height: calc(100vh - 56px);
-    overflow-y: auto;
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background-color: rgba(0, 0, 0, 0.9);
+        border-radius: 15px;
+        padding: 10px;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 5px;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 0.5rem 1rem !important;
+    }
+}
+
+/* Additional padding for navbar links */
+.navbar-nav {
+    padding-left: 15px;
 }
 
 .main-content {
@@ -42,6 +63,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
     padding-top: 50px;
+    padding-bottom: 2rem;
 }
 
 .content-box {
