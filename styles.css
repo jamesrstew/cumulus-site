@@ -9,8 +9,13 @@ h1 {
   font-family: 'Concert One', cursive;
 }
 
+h1.main-title {
+  padding-bottom: 25px;
+}
+
 h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
+    font-weight: 700;
 }
 
 hr {
@@ -134,7 +139,11 @@ hr {
 
 @media (max-width: 991px) {
 h1 {
-  font-size: 2rem;
+  font-size: 3rem;
+}
+
+h1.main-title {
+  font-size: 2.4rem;
 }
 
     .navbar-collapse {
@@ -511,4 +520,30 @@ h1 {
     .app-store-button:hover {
         animation: gentleFloat 2s ease-in-out infinite;
     }
+}
+#contentDownloadButton {
+    background-color: transparent;
+    color: #000;  /* Changed to black */
+    border: 2px solid #000;  /* White border */
+    border-radius: 5px;  /* Small border radius */
+    padding: 0.75rem 2rem;  /* Increased padding for larger size */
+    font-size: 1.2rem;  /* Increased font size */
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    margin-bottom: 2rem;
+
+}
+
+#contentDownloadButton:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+@keyframes gentleFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+#contentDownloadButton {
+    animation: gentleFloat 4s ease-in-out infinite;
 }
