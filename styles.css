@@ -1,0 +1,313 @@
+body {
+    font-family: Poppins, sans-serif;
+    background-color: #000;
+    color: #000;
+    padding-top: 75px; /* Adjust this value to match your navbar height */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Concert One', cursive;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0) !important; /* Semi-transparent black */
+}
+
+.navbar-brand {
+  font-family: 'Concert One', cursive;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+    width: 30px; /* Adjust this value to scale the logo as needed */
+    height: auto;
+    margin-right: 10px; /* Add some space between the logo and text */
+}
+
+.nav-link {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.navbar-collapse {
+    max-height: calc(100vh - 56px);
+    overflow-y: auto;
+}
+
+.main-content {
+    padding-top: 1rem; /* Add some space between navbar and main content */
+}
+
+.container {
+    padding-top: 50px;
+}
+
+.content-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.app-store-button {
+    margin-bottom: 20px; /* Add space below the App Store button */
+}
+
+.clouds-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.cloud {
+    position: absolute;
+    opacity: 0.5;
+}
+
+.cloud-1 {
+    width: 300px;
+    top: 10%;
+    left: 10%;
+    animation: float1 8s ease-in-out infinite;
+}
+
+.cloud-2 {
+    width: 200px;
+    top: 30%;
+    right: 15%;
+    animation: float2 12s ease-in-out infinite;
+}
+
+.cloud-3 {
+    width: 250px;
+    bottom: 20%;
+    left: 20%;
+    animation: float3 10s ease-in-out infinite;
+}
+
+.cloud-4 {
+    width: 180px;
+    top: 60%;
+    right: 25%;
+    animation: float4 9s ease-in-out infinite;
+}
+
+.cloud-5 {
+    width: 350px;
+    bottom: 10%;
+    right: 5%;
+    animation: float5 11s ease-in-out infinite;
+}
+
+.cloud-6 {
+    width: 220px;
+    top: 45%;
+    left: 30%;
+    animation: float6 13s ease-in-out infinite;
+}
+
+.cloud-7 {
+    width: 280px;
+    top: 5%;
+    right: 35%;
+    animation: float7 14s ease-in-out infinite;
+}
+
+.cloud-8 {
+    width: 190px;
+    bottom: 15%;
+    left: 40%;
+    animation: float8 15s ease-in-out infinite;
+}
+
+@keyframes float1 {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(-30px, -50px); }
+}
+
+@keyframes float2 {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(20px, -30px); }
+}
+
+@keyframes float3 {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(-25px, -40px); }
+}
+
+@keyframes float4 {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(15px, -35px); }
+}
+
+@keyframes float5 {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(-20px, -45px); }
+}
+
+@keyframes float6 {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(25px, -40px); }
+}
+
+@keyframes float7 {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(-15px, -35px); }
+}
+
+@keyframes float8 {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(20px, -30px); }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-top: 20px;
+    }
+
+    .main-content {
+    padding-top: 20px; /* Add some space between navbar and main content on mobile */
+}
+
+    .content-box {
+        padding: 20px;
+    }
+
+    body {
+        font-size: 18px;
+        padding-top: 75px; /* Ensure enough padding for mobile navbar */
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .cloud-1 { width: 150px; }
+    .cloud-2 { width: 100px; }
+    .cloud-3 { width: 125px; }
+    .cloud-4 { width: 90px; }
+    .cloud-5 { width: 175px; }
+    .cloud-6 { width: 110px; }
+    .cloud-7 { width: 140px; }
+    .cloud-8 { width: 95px; }
+}
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.concert-one-regular {
+  font-family: "Concert One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
