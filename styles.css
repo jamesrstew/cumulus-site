@@ -6,20 +6,24 @@ body {
 }
 
 h1 {
-  font-family: 'Concert One', cursive;
+    font-family: 'Concert One', cursive;
 }
 
 h1.main-title {
-  padding-bottom: 25px;
+    padding-bottom: 25px;
 }
 
-h2, h3, h4, h5, h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
 }
 
 hr {
-  border-top: 4px solid #000;
+    border-top: 4px solid #000;
 }
 
 .navbar {
@@ -54,7 +58,7 @@ hr {
 }
 
 .modal-content {
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(0, 0, 0) 0px 0px 0px 1px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(0, 0, 0) 0px 0px 0px 1px;
 }
 
 .main-content {
@@ -100,7 +104,8 @@ hr {
 }
 
 .qr-code-text {
-    font-size: 0.9em; /* Adjust as needed */
+    font-size: 0.9em;
+    /* Adjust as needed */
 }
 
 .download-section {
@@ -110,9 +115,10 @@ hr {
 }
 
 @media (min-width: 992px) {
-  h1 {
-    font-size: 4rem;
-  }
+    h1 {
+        font-size: 4rem;
+    }
+
     .content-box {
         display: flex;
         align-items: stretch;
@@ -138,13 +144,13 @@ hr {
 }
 
 @media (max-width: 991px) {
-h1 {
-  font-size: 3rem;
-}
+    h1 {
+        font-size: 3rem;
+    }
 
-h1.main-title {
-  font-size: 2.4rem;
-}
+    h1.main-title {
+        font-size: 2.4rem;
+    }
 
     .navbar-collapse {
         background-color: rgba(0, 0, 0, 0.9);
@@ -160,33 +166,38 @@ h1.main-title {
         padding: 0.5rem 1rem !important;
     }
 
-    p, ul {
-        font-size: 0.9em; /* Make <p> text slightly smaller on mobile */
+    p,
+    ul {
+        font-size: 0.9em;
+        /* Make <p> text slightly smaller on mobile */
     }
 
     .app-store-button {
         display: flex;
-        justify-content: center; /* Horizontally center the Apple App Store SVG */
+        justify-content: center;
+        /* Horizontally center the Apple App Store SVG */
         margin-top: 20px;
-        margin-bottom: 20px; /* Add space below the App Store button */
+        margin-bottom: 20px;
+        /* Add space below the App Store button */
     }
 
     .app-store-button img {
-    width: 200px;
-    height: auto;
-}
+        width: 200px;
+        height: auto;
+    }
 
     .content-box {
-    flex-direction: column;
-}
+        flex-direction: column;
+    }
 
-.content-left, .content-right {
-    width: 100%;
-}
+    .content-left,
+    .content-right {
+        width: 100%;
+    }
 
-.placeholder-image {
-    margin-top: 20px;
-}
+    .placeholder-image {
+        margin-top: 20px;
+    }
 }
 
 .clouds-container {
@@ -261,43 +272,99 @@ h1.main-title {
 }
 
 @keyframes float1 {
-    0%, 100% { transform: translate(0, 0); }
-    50% { transform: translate(-30px, -50px); }
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(-30px, -50px);
+    }
 }
 
 @keyframes float2 {
-    0%, 100% { transform: translate(0, 0); }
-    50% { transform: translate(20px, -30px); }
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(20px, -30px);
+    }
 }
 
 @keyframes float3 {
-    0%, 100% { transform: translate(0, 0); }
-    50% { transform: translate(-25px, -40px); }
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(-25px, -40px);
+    }
 }
 
 @keyframes float4 {
-    0%, 100% { transform: translate(0, 0); }
-    50% { transform: translate(15px, -35px); }
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(15px, -35px);
+    }
 }
 
 @keyframes float5 {
-    0%, 100% { transform: translate(0, 0); }
-    50% { transform: translate(-20px, -45px); }
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(-20px, -45px);
+    }
 }
 
 @keyframes float6 {
-    0%, 100% { transform: translate(0, 0); }
-    50% { transform: translate(25px, -40px); }
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(25px, -40px);
+    }
 }
 
 @keyframes float7 {
-    0%, 100% { transform: translate(0, 0); }
-    50% { transform: translate(-15px, -35px); }
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(-15px, -35px);
+    }
 }
 
 @keyframes float8 {
-    0%, 100% { transform: translate(0, 0); }
-    50% { transform: translate(20px, -30px); }
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(20px, -30px);
+    }
 }
 
 @media (max-width: 768px) {
@@ -306,8 +373,9 @@ h1.main-title {
     }
 
     .main-content {
-    padding-top: 20px; /* Add some space between navbar and main content on mobile */
-}
+        padding-top: 20px;
+        /* Add some space between navbar and main content on mobile */
+    }
 
     .content-box {
         padding: 20px;
@@ -315,131 +383,155 @@ h1.main-title {
 
     body {
         font-size: 18px;
-        padding-top: 75px; /* Ensure enough padding for mobile navbar */
+        padding-top: 75px;
+        /* Ensure enough padding for mobile navbar */
     }
 
-    .cloud-1 { width: 150px; }
-    .cloud-2 { width: 100px; }
-    .cloud-3 { width: 125px; }
-    .cloud-4 { width: 90px; }
-    .cloud-5 { width: 175px; }
-    .cloud-6 { width: 110px; }
-    .cloud-7 { width: 140px; }
-    .cloud-8 { width: 95px; }
+    .cloud-1 {
+        width: 150px;
+    }
+
+    .cloud-2 {
+        width: 100px;
+    }
+
+    .cloud-3 {
+        width: 125px;
+    }
+
+    .cloud-4 {
+        width: 90px;
+    }
+
+    .cloud-5 {
+        width: 175px;
+    }
+
+    .cloud-6 {
+        width: 110px;
+    }
+
+    .cloud-7 {
+        width: 140px;
+    }
+
+    .cloud-8 {
+        width: 95px;
+    }
 }
 
 .poppins-thin {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: normal;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
 }
 
 .poppins-extralight {
-  font-family: "Poppins", sans-serif;
-  font-weight: 200;
-  font-style: normal;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
 }
 
 .poppins-light {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-style: normal;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .poppins-regular {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .poppins-medium {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .poppins-semibold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: normal;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .poppins-bold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .poppins-extrabold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-style: normal;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
 }
 
 .poppins-black {
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-style: normal;
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
 }
 
 .poppins-thin-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: italic;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
 }
 
 .poppins-extralight-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 200;
-  font-style: italic;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
 }
 
 .poppins-light-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-style: italic;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
 }
 
 .poppins-regular-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: italic;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
 }
 
 .poppins-medium-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: italic;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
 }
 
 .poppins-semibold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: italic;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
 }
 
 .poppins-bold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: italic;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
 }
 
 .poppins-extrabold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-style: italic;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
 }
 
 .poppins-black-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-style: italic;
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
 }
 
 .concert-one-regular {
-  font-family: "Concert One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Concert One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 #downloadButton {
@@ -476,12 +568,31 @@ h1.main-title {
 }
 
 @keyframes continuousHeadShake {
-    0%, 100% { transform: translateX(0); }
-    6.5% { transform: translateX(-3px) rotateY(-9deg); }
-    18.5% { transform: translateX(2px) rotateY(7deg); }
-    31.5% { transform: translateX(-1px) rotateY(-5deg); }
-    43.5% { transform: translateX(1px) rotateY(3deg); }
-    50% { transform: translateX(0); }
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    6.5% {
+        transform: translateX(-3px) rotateY(-9deg);
+    }
+
+    18.5% {
+        transform: translateX(2px) rotateY(7deg);
+    }
+
+    31.5% {
+        transform: translateX(-1px) rotateY(-5deg);
+    }
+
+    43.5% {
+        transform: translateX(1px) rotateY(3deg);
+    }
+
+    50% {
+        transform: translateX(0);
+    }
 }
 
 #downloadButton {
@@ -499,9 +610,19 @@ h1.main-title {
 }
 
 @keyframes gentleFloat {
-    0%, 100% { transform: translateY(0); }
-    25% { transform: translateY(-5px); }
-    75% { transform: translateY(5px); }
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-5px);
+    }
+
+    75% {
+        transform: translateY(5px);
+    }
 }
 
 /* For the QR code on desktop */
@@ -521,13 +642,19 @@ h1.main-title {
         animation: gentleFloat 2s ease-in-out infinite;
     }
 }
+
 #contentDownloadButton {
     background-color: transparent;
-    color: #000;  /* Changed to black */
-    border: 2px solid #000;  /* White border */
-    border-radius: 5px;  /* Small border radius */
-    padding: 0.75rem 2rem;  /* Increased padding for larger size */
-    font-size: 1.2rem;  /* Increased font size */
+    color: #000;
+    /* Changed to black */
+    border: 2px solid #000;
+    /* White border */
+    border-radius: 5px;
+    /* Small border radius */
+    padding: 0.75rem 2rem;
+    /* Increased padding for larger size */
+    font-size: 1.2rem;
+    /* Increased font size */
     font-weight: 600;
     text-transform: uppercase;
     transition: all 0.3s ease;
@@ -540,8 +667,15 @@ h1.main-title {
 }
 
 @keyframes gentleFloat {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
 }
 
 #contentDownloadButton {
