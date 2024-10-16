@@ -80,7 +80,7 @@ hr {
 
 }
 
-.placeholder-image {
+.hero-image {
     max-width: 100%;
     height: auto;
     display: block;
@@ -136,7 +136,7 @@ hr {
         justify-content: center;
     }
 
-    .placeholder-image {
+    .hero-image {
         max-width: 100%;
         height: auto;
     }
@@ -190,7 +190,7 @@ hr {
         width: 100%;
     }
 
-    .placeholder-image {
+    .hero-image {
         margin-top: 20px;
     }
 }
@@ -638,16 +638,11 @@ hr {
 
 #contentDownloadButton {
     background-color: transparent;
-    color: #000;
-    /* Changed to black */
-    border: 2px solid #000;
-    /* White border */
+    color: #fff;
+    border: 2px solid #fff;
     border-radius: 5px;
-    /* Small border radius */
     padding: 0.75rem 2rem;
-    /* Increased padding for larger size */
     font-size: 1.2rem;
-    /* Increased font size */
     font-weight: 600;
     text-transform: uppercase;
     transition: all 0.3s ease;
