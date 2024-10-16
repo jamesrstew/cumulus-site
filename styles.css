@@ -2,7 +2,6 @@ body {
     font-family: Poppins, sans-serif;
     background-color: #000;
     color: #000;
-    padding-top: 75px;
 }
 
 h1 {
@@ -152,8 +151,7 @@ hr {
         font-size: 2.4rem;
     }
 
-    .navbar-collapse {
-        background-color: rgba(0, 0, 0, 0.9);
+    navbar-collapse {
         border-radius: 15px;
         padding: 10px;
     }
@@ -169,16 +167,13 @@ hr {
     p,
     ul {
         font-size: 0.9em;
-        /* Make <p> text slightly smaller on mobile */
     }
 
     .app-store-button {
         display: flex;
         justify-content: center;
-        /* Horizontally center the Apple App Store SVG */
         margin-top: 20px;
         margin-bottom: 20px;
-        /* Add space below the App Store button */
     }
 
     .app-store-button img {
@@ -383,8 +378,6 @@ hr {
 
     body {
         font-size: 18px;
-        padding-top: 75px;
-        /* Ensure enough padding for mobile navbar */
     }
 
     .cloud-1 {
@@ -680,4 +673,33 @@ hr {
 
 #contentDownloadButton {
     animation: gentleFloat 4s ease-in-out infinite;
+}
+
+.legal {
+    color: white;
+    margin-bottom: 50px;
+}
+
+a {
+    color:#fff
+    
+}
+
+.footer .nav-link {
+    color: white !important;
+    text-decoration: none !important;
+}
+.footer .nav-link:hover {
+    color: #f8f9fa !important;  /* Slightly lighter on hover for feedback */
+}
+
+::selection {
+    background-color: white;
+    color: black;
+}
+
+/* Firefox */
+::-moz-selection {
+    background-color: white;
+    color: black;
 }
