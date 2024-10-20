@@ -213,7 +213,7 @@
                 </div>
                 <div class="modal-body text-center">
                     <p>Scan this QR code to download Cumulus on your Apple device:</p>
-                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://apps.apple.com/us/app/cumulus-breathing/id1234567890"
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://apps.apple.com/us/app/cumulus-breathing/id1234567890?utm_source=website&utm_medium=button&utm_campaign=website_to_appstore?utm_source=website&utm_medium=button&utm_campaign=website_to_appstore"
                         alt="QR Code" class="img-fluid qr-code">
                 </div>
             </div>
@@ -224,7 +224,7 @@
         document.addEventListener('DOMContentLoaded', function () {
             var downloadButton = document.getElementById('downloadButton');
             var downloadModal = new bootstrap.Modal(document.getElementById('downloadModal'));
-            var appStoreLink = 'https://apps.apple.com/us/app/cumulus-breathing/id1234567890'; // Replace with your actual App Store link
+            var appStoreLink = 'https://apps.apple.com/us/app/cumulus-breathing/id1234567890?utm_source=website&utm_medium=button&utm_campaign=website_to_appstore?utm_source=website&utm_medium=button&utm_campaign=website_to_appstore'; // Replace with your actual App Store link
 
             downloadButton.addEventListener('click', function (event) {
                 event.preventDefault();
@@ -243,7 +243,7 @@
         document.addEventListener('DOMContentLoaded', function () {
             var downloadButtons = document.querySelectorAll('#downloadButton, #contentDownloadButton');
             var downloadModal = new bootstrap.Modal(document.getElementById('downloadModal'));
-            var appStoreLink = 'https://apps.apple.com/us/app/cumulus-breathing/id1234567890'; // Replace with your actual App Store link
+            var appStoreLink = 'https://apps.apple.com/us/app/cumulus-breathing/id1234567890?utm_source=website&utm_medium=button&utm_campaign=website_to_appstore'; // Replace with your actual App Store link
 
             downloadButtons.forEach(function (button) {
                 button.addEventListener('click', function (event) {
